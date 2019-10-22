@@ -8,5 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     name: 'Creating a binder'
     steps:
+    - name: 'Checkout the repo'
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
     - name: 'Build and push image'
       uses: neovintage/repo2docker-action@master
