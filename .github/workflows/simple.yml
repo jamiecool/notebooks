@@ -8,4 +8,4 @@ jobs:
     name: 'Creating a binder'
     steps:
     - name: 'Build and push image'
-      uses: neovintage/repo2docker-action
+      uses: neovintage/repo2docker-action@master
